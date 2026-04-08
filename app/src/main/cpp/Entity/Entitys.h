@@ -1,5 +1,5 @@
 //
-// Created by sosan on 01.03.2026.
+// Created by SquateDev on 01.03.2026.
 //
 
 #ifndef TOOLLAUNCHER_ENTITYS_H
