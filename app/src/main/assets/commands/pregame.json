@@ -1,0 +1,22 @@
+{
+  "closewebsocket": {
+    "versions": [
+      {
+        "description": "commands.closewebsocket.description",
+        "permission": "host",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": []
+            },
+            "output": {
+              "format_strings": [],
+              "parameters": []
+            }
+          }
+        }
+      }
+    ]
+  }
+}

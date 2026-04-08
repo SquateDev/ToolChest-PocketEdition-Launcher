@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "textures/gui/background/panorama_0": "InUserPackage",
+    "textures/gui/background/panorama_1": "InUserPackage",
+    "textures/gui/background/panorama_2": "InUserPackage",
+    "textures/gui/background/panorama_3": "InUserPackage",
+    "textures/gui/background/panorama_4": "InUserPackage",
+    "textures/gui/background/panorama_5": "InUserPackage"
+  }
+}

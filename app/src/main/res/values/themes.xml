@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="NoActionBar" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">#161616</item>
+        <item name="android:colorPrimaryDark">#161616</item>
+        <item name="android:colorAccent">@color/purple_700</item>
+        <item name="android:colorControlHighlight">@color/purple_700</item>
+        <item name="android:colorControlNormal">@color/purple_700</item>
+    </style>
+</resources>

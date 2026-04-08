@@ -1,0 +1,378 @@
+{
+  "help": {
+    "versions": [
+      {
+        "description": "commands.help.description",
+        "permission": "any",
+        "aliases": [
+          "?"
+        ],
+
+        "overloads": {
+          "byName": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "command",
+                  "type": "stringenum",
+                  "enum_type": "commandName"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "{0}"
+                }
+              ],
+              "parameters": [
+                {
+                  "name": "body",
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "byPage": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "page",
+                  "type": "int",
+                  "optional": true
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "commands.help.header",
+                  "color":  "dark_green"
+                },
+                {
+                  "format": "{2}"
+                },
+                {
+                  "format": "commands.help.footer",
+                  "color":  "dark_green"
+                }
+              ],
+              "parameters": [
+                {
+                  "name": "page",
+                  "type": "int"
+                },
+                {
+                  "name": "pageCount",
+                  "type": "int"
+                },
+                {
+                  "name": "body",
+                  "type": "string"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "description": "commands.help.description",
+        "permission": "any",
+        "aliases": [
+          "?"
+        ],
+
+        "overloads": {
+          "byName": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "command",
+                  "type": "stringenum",
+                  "enum_type": "commandName"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "{0}"
+                },
+                {
+                  "format": "{1}"
+                },
+                {
+                  "format": "commands.generic.usage.noparam"
+                },
+                {
+                  "format": "{2}"
+                }
+              ],
+              "parameters": [
+                {
+                  "name": "command",
+                  "type": "string"
+                },
+                {
+                  "name": "description",
+                  "type": "string"
+                },
+                {
+                  "name": "usage",
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "byPage": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "page",
+                  "type": "int",
+                  "optional": true
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "commands.help.header",
+                  "color":  "dark_green"
+                },
+                {
+                  "format": "{2}"
+                },
+                {
+                  "format": "commands.help.footer",
+                  "color":  "dark_green"
+                }
+              ],
+              "parameters": [
+                {
+                  "name": "page",
+                  "type": "int"
+                },
+                {
+                  "name": "pageCount",
+                  "type": "int"
+                },
+                {
+                  "name": "body",
+                  "type": "string"
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "closewebsocket": {
+    "versions": [
+      {
+        "description": "commands.closewebsocket.description",
+        "permission": "any",
+        "is_hidden": true,
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [ ]
+            },
+            "output": {
+              "format_strings": [ ],
+              "parameters": [ ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "geteduclientinfo": {
+    "versions": [
+      {
+        "requires_edu":  true,
+        "description": "commands.geteduclientinfo.description",
+        "permission": "any",
+        "is_hidden": true,
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+              ]
+            },
+            "output": {
+              "format_strings": [
+              ],
+              "parameters": [
+                {
+                  "name": "tenantId",
+                  "type": "string"
+                },
+                {
+                  "name": "isHost",
+                  "type": "bool"
+                },
+                {
+                  "name": "hostuuid",
+                  "type": "string"
+                },
+                {
+                  "name": "companionProtocolVersion",
+                  "type": "int"
+                },
+                {
+                  "name": "playersessionuuid",
+                  "type": "string"
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "getlocalplayername": {
+    "versions": [
+      {
+        "description": "commands.getlocalplayername.description",
+        "permission": "any",
+        "is_hidden": true,
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": []
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "{0}"
+                }
+              ],
+              "parameters": [
+                {
+                  "name": "localplayername",
+                  "type": "string"
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "enableencryption": {
+    "versions": [
+      {
+        "description": "commands.enableencryption.description",
+        "permission": "any",
+        "is_hidden": true,
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "publicKey",
+                  "type": "rawtext"
+                },
+                {
+                  "name": "salt",
+                  "type": "rawtext"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [ ],
+              "parameters": [
+                {
+                  "name": "publicKey",
+                  "type": "rawtext"
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "position": {
+    "versions": [
+      {
+        "requires_edu":  true,
+        "description": "commands.position.description",
+        "permission": "any",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+              ]
+            },
+            "output": {
+              "format_strings": [
+              ],
+              "parameters": [
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "code": {
+    "versions": [
+      {
+        "requires_edu":  true,
+        "description": "commands.code.description",
+        "permission": "any",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [ ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "commands.code.success"
+				}
+              ],
+              "parameters": [ 
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "classroommode": {
+    "versions": [
+      {
+        "requires_edu":  true,
+        "description": "commands.classroommode.description",
+        "permission": "any",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [ ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "commands.classroommode.success"
+                }
+              ],
+              "parameters": [ 
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

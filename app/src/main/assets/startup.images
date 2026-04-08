@@ -1,0 +1,17 @@
+{
+  "textures": {
+    "font/default8": "InUserPackage",
+    "textures/gui/background": "InUserPackage",
+    "textures/gui/bg32": "InUserPackage",
+    "textures/gui/cursor": "InUserPackage",
+    "textures/gui/default_world": "InUserPackage",
+    "textures/gui/gui": "InUserPackage",
+    "textures/gui/gui2": "InUserPackage",
+    "textures/gui/icons": "InUserPackage",
+    "textures/gui/spritesheet": "InUserPackage",
+    "textures/gui/title": "InUserPackage",
+    "textures/gui/touchgui": "InUserPackage",
+    "textures/gui/touchgui2": "InUserPackage",
+    "textures/misc/missing_texture": "InUserPackage"
+  }
+}

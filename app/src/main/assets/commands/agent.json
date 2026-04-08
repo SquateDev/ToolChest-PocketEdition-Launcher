@@ -1,0 +1,628 @@
+{
+  "move": {
+    "versions": [
+      {
+        "permission": "any",
+        "is_hidden": true,
+        "requires_edu": true,
+        "description": "commands.agent.move.description",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "direction",
+                  "type": "stringenum",
+                  "enum_type": "agentCommandDirection"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+			    {
+                  "format": "commands.agent.move.success"
+				}
+              ],
+              "parameters": [
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "turn": {
+    "versions": [
+      {
+        "permission": "any",
+        "is_hidden": true,
+        "requires_edu": true,
+        "description": "commands.agent.turn.description",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "direction",
+                  "type": "stringenum",
+                  "enum_type": "agentCommandTurnDirection"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+			    {
+                  "format": "commands.agent.turn.success"
+				}
+              ],
+              "parameters": [
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "attack": {
+    "versions": [
+      {
+        "permission": "any",
+        "is_hidden": true,
+        "requires_edu": true,
+        "description": "commands.agent.attack.description",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "direction",
+                  "type": "stringenum",
+                  "enum_type": "agentCommandDirection"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+			    {
+                  "format": "commands.agent.attack.success"
+				}
+              ],
+              "parameters": [
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "destroy": {
+    "versions": [
+      {
+        "permission": "any",
+        "is_hidden": true,
+        "requires_edu": true,
+        "description": "commands.agent.destroy.description",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "direction",
+                  "type": "stringenum",
+                  "enum_type": "agentCommandDirection"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+			    {
+                  "format": "commands.agent.destroy.success"
+				}
+              ],
+              "parameters": [
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "drop": {
+    "versions": [
+      {
+        "permission": "any",
+        "is_hidden": true,
+        "requires_edu": true,
+        "description": "commands.agent.drop.description",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "slotNum",
+                  "type": "int"
+                },
+                {
+                  "name": "quantity",
+                  "type": "int"
+                },
+                {
+                  "name": "direction",
+                  "type": "stringenum",
+                  "enum_type": "agentCommandDirection"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+				{
+                  "format": "commands.agent.drop.success"
+				}
+              ],
+              "parameters": [
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "dropall": {
+    "versions": [
+      {
+        "permission": "any",
+        "is_hidden": true,
+        "requires_edu": true,
+        "description": "commands.agent.dropall.description",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "direction",
+                  "type": "stringenum",
+                  "enum_type": "agentCommandDirection"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "commands.agent.dropall.success"
+				}
+              ],
+              "parameters": [
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "inspect": {
+    "versions": [
+      {
+        "permission": "any",
+        "is_hidden": true,
+        "requires_edu": true,
+        "description": "commands.agent.inspect.description",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "direction",
+                  "type": "stringenum",
+                  "enum_type": "agentCommandDirection"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "commands.agent.inspect.success"
+				}
+              ],
+              "parameters": [
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "inspectdata": {
+    "versions": [
+      {
+        "permission": "any",
+        "is_hidden": true,
+        "requires_edu": true,
+        "description": "commands.agent.inspectdata.description",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "direction",
+                  "type": "stringenum",
+                  "enum_type": "agentCommandDirection"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "commands.agent.inspect.success"
+				}
+              ],
+              "parameters": [
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "detect": {
+    "versions": [
+      {
+        "permission": "any",
+        "is_hidden": true,
+        "requires_edu": true,
+        "description": "commands.agent.detect.description",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "direction",
+                  "type": "stringenum",
+                  "enum_type": "agentCommandDirection"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "commands.agent.detect.success"
+				}
+              ],
+              "parameters": [
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "detectredstone": {
+    "versions": [
+      {
+        "permission": "any",
+        "is_hidden": true,
+        "requires_edu": true,
+        "description": "commands.agent.detectredstone.description",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "direction",
+                  "type": "stringenum",
+                  "enum_type": "agentCommandDirection"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "commands.agent.detectredstone.success"
+				}
+              ],
+              "parameters": [
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "transfer": {
+    "versions": [
+      {
+        "permission": "any",
+        "is_hidden": true,
+        "requires_edu": true,
+        "description": "commands.agent.transfer.description",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "srcSlotNum",
+                  "type": "int"
+                },
+                {
+                  "name": "quantity",
+                  "type": "int"
+                },
+                {
+                  "name": "dstSlotNum",
+                  "type": "int"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "commands.agent.transfer.success"
+				}
+              ],
+              "parameters": [
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "createagent": {
+    "versions": [
+      {
+        "permission": "any",
+        "is_hidden": true,
+        "requires_edu": true,
+        "description": "commands.agent.createagent.description",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+              ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "commands.agent.createagent.success"
+				}
+              ],
+              "parameters": [
+                {
+                  "name": "wasSpawned",
+                  "type": "bool"
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "tpagent": {
+    "versions": [
+      {
+        "permission": "any",
+        "is_hidden": true,
+        "requires_edu": true,
+        "description": "commands.agent.tpagent.description",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+              ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "commands.agent.tpagent.success"
+				}
+              ],
+              "parameters": [
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "collect": {
+    "versions": [
+      {
+        "permission": "any",
+        "is_hidden": true,
+        "requires_edu": true,
+        "description": "commands.agent.collect.description",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "item",
+                  "type": "string"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "commands.agent.collect.success"
+				}
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "till": {
+    "versions": [
+      {
+        "permission": "any",
+        "is_hidden": true,
+        "requires_edu": true,
+        "description": "commands.agent.till.description",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "direction",
+                  "type": "stringenum",
+                  "enum_type": "agentCommandDirection"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "commands.agent.till.success"
+				}
+              ],
+              "parameters": [
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "place": {
+    "versions": [
+      {
+        "permission": "any",
+        "is_hidden": true,
+        "requires_edu": true,
+        "description": "commands.agent.place.description",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "slotNum",
+                  "type": "int"
+                },
+                {
+                  "name": "direction",
+                  "type": "stringenum",
+                  "enum_type": "agentCommandDirection"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "commands.agent.place.success"
+				}
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "getitemcount": {
+    "versions": [
+      {
+        "permission": "any",
+        "is_hidden": true,
+        "requires_edu": true,
+        "description": "commands.agent.getitemcount.description",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "slotNum",
+                  "type": "int"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "commands.agent.getitemcount.success"
+				}
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "getitemspace": {
+    "versions": [
+      {
+        "permission": "any",
+        "is_hidden": true,
+        "requires_edu": true,
+        "description": "commands.agent.getitemspace.description",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "slotNum",
+                  "type": "int"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "commands.agent.getitemspace.success"
+				}
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "getitemdetail": {
+    "versions": [
+      {
+        "permission": "any",
+        "is_hidden": true,
+        "requires_edu": true,
+        "description": "commands.agent.getitemdetail.description",
+
+        "overloads": {
+          "default": {
+            "input": {
+              "parameters": [
+                {
+                  "name": "slotNum",
+                  "type": "int"
+                }
+              ]
+            },
+            "output": {
+              "format_strings": [
+                {
+                  "format": "commands.agent.getitemdetail.success"
+				}
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}
